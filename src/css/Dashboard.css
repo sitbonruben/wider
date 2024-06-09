@@ -1,0 +1,18 @@
+/* Dashboard.css */
+.dashboard {
+  padding: 20px;
+  margin-top: 64px; /* Height of the header */
+  transition: margin-left 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  min-height: calc(100vh - 64px); /* Ensures it covers the full viewport height minus the header height */
+  width: 100%; /* Ensures it covers the full viewport width */
+}
+
+.dashboard.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dashboard.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}

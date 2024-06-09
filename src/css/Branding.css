@@ -1,0 +1,148 @@
+.branding-container {
+  padding: 20px;
+  margin-top: 64px; /* Height of the header */
+  transition: margin-left 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.branding-container.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.branding-container.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.branding-section {
+  margin-bottom: 20px;
+}
+
+.scrape-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scrape-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.scrape-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scrape-form button:hover {
+  background-color: #007bff;
+}
+
+.branding-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.branding-form .form-group {
+  margin-bottom: 15px;
+}
+
+.branding-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.branding-form input, .branding-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.color-picker-container {
+  display: flex;
+  gap: 10px;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.save-button, .scrape-button, .create-button, .add-font-button, .edit-button, .cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover, .scrape-button:hover, .create-button:hover, .add-font-button:hover, .edit-button:hover, .cancel-button:hover {
+  background-color: #007bff;
+}
+
+.save-button:active, .scrape-button:active, .create-button:active, .add-font-button:active, .edit-button:active, .cancel-button:active {
+  background-color: #0056b3;
+}
+
+.color-swatches {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.color-swatch {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.saved-brandings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.branding-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.branding-item.active {
+  border: 2px solid #007bff;
+}
+
+.branding-item.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.branding-item.dark-mode {
+  background-color: #555555;
+  color: #ffffff;
+}
+
+.branding-logo {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 10px;
+}
+
+.branding-actions {
+  display: flex;
+  gap: 10px;
+}

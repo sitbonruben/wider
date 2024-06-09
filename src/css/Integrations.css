@@ -1,0 +1,213 @@
+/* Integrations.css */
+
+.integrations-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .filters button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filters button:hover {
+    background-color: #0056b3;
+  }
+  
+  .filters button:focus {
+    outline: none;
+    background-color: #004494;
+  }
+  
+  .integrations-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: left;
+  }
+  
+  .integration-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .integration-card:hover {
+    transform: translateY(-5px);
+    border-color: #aaa;
+  }
+  
+  .integration-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .integration-card h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .integration-card p {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .connect-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .connect-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .disconnect-button {
+    background-color: transparent;
+    color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .disconnect-button:hover {
+    color: darkred;
+  }
+  
+  .confirmation-modal, .connect-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .confirmation-modal p, .connect-popup p {
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-button, .connect-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .confirmation-button:hover, .connect-button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Dark Mode Styles */
+  .integrations-container.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .integrations-container.dark-mode .filters button {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .integrations-container.dark-mode .filters button:hover {
+    background-color: #003f8a;
+  }
+  
+  .integrations-container.dark-mode .integration-card {
+    background-color: #444444;
+    border: 1px solid #555555;
+  }
+  
+  .integrations-container.dark-mode .integration-icon {
+    color: inherit; /* Use icon's color as specified in JSX */
+  }
+  
+  .integrations-container.dark-mode .integration-card h2 {
+    color: #ffffff;
+  }
+  
+  .integrations-container.dark-mode .integration-card p {
+    color: #cccccc;
+  }
+  
+  .integrations-container.dark-mode .connect-button {
+    background-color: #0056b3;
+  }
+  
+  .integrations-container.dark-mode .connect-button:hover {
+    background-color: #003f8a;
+  }
+  
+  .integrations-container.dark-mode .disconnect-button {
+    color: #ff4d4d;
+  }
+  
+  .integrations-container.dark-mode .disconnect-button:hover {
+    color: #ff0000;
+  }
+  
+  .integrations-container.dark-mode .confirmation-modal, .connect-popup {
+    background-color: #444444;
+    border: 1px solid #555555;
+  }
+  
+  .integrations-container.dark-mode .confirmation-modal p, .connect-popup p {
+    color: #ffffff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .integrations-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .integrations-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .integrations-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  

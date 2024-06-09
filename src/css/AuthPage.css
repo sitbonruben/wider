@@ -1,0 +1,76 @@
+/* src/css/AuthPage.css */
+@keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .auth-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffd1ff, #c2e9fb, #e2e2e2);
+    background-size: 300% 300%;
+    animation: gradientBG 15s ease infinite;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .auth-wrapper {
+    @apply relative flex flex-col items-center w-full max-w-md bg-white bg-opacity-90 p-8 rounded-lg shadow-lg;
+    z-index: 1;
+  }
+  
+  .auth-container {
+    @apply w-full;
+  }
+  
+  .auth-title {
+    @apply text-2xl mb-6 text-gray-800;
+  }
+  
+  .auth-input-group {
+    @apply mb-4;
+  }
+  
+  .auth-input {
+    @apply w-full p-3 mb-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none;
+  }
+  
+  .auth-button {
+    @apply w-full bg-blue-600 text-white p-3 rounded-lg cursor-pointer border-none hover:bg-blue-700 transition;
+  }
+  
+  .auth-links {
+    @apply mt-4 flex justify-between flex-wrap;
+  }
+  
+  .auth-link {
+    @apply text-blue-600 text-sm hover:underline;
+  }
+  
+  .auth-error {
+    @apply text-red-500 mb-4;
+  }
+  
+  .absolute-element {
+    @apply absolute text-blue-600 text-sm hover:underline;
+  }
+  
+  .logo-top-left {
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .back-home-bottom-left {
+    bottom: 1rem;
+    left: 1rem;
+  }
+  
